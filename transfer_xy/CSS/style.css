@@ -1,0 +1,8 @@
+.points{
+    position: absolute;
+    z-index: 3;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+}
