@@ -1,0 +1,9 @@
+.lattice{
+    width: 100%;
+    height: 100%;
+}
+.lattice td{
+    border-spacing: 0;
+    padding: 0;
+    border: 0.5px solid gray;
+}
