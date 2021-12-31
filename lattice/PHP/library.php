@@ -7,7 +7,6 @@
             $larger_row_cell_cnt(INT): 크게 잡은 행 라인 개수
             $larger_col_cell_cnt (INT): 크게 잡은 열 라인 개수
     */
-
     function draw_lattice($row_line_cnt, $col_line_cnt, $larger_row_cell_cnt="", $larger_col_cell_cnt=""){
         echo "<table class='lattice' cellspacing='0'>";
 

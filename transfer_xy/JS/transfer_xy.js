@@ -1,5 +1,5 @@
 /*
-    Description: 원본에서 기록된 좌표를 동적인 화면에서의 좌표값을 리턴한다
+    Description: 원본에서 기록된 좌표를 변경된 사이즈 화면에서의 좌표값을 리턴한다
     Parameter:
         original_target_width(INT): 실제 원본의 바탕 가로 사이즈(px)
         original_point_info(Array): 실제 좌표의 정보 배열([x:'', y:''])
@@ -13,7 +13,6 @@
         2) 좌표점은 원형이나 정사각형을 권장합니다
         3) 좌표에 대해 추가적인 정보가 있을 경우 original_point_info 파라미터를 참고하여 수정해주세요
 */
-
 function get_point_xy(original_target_width, original_point_info, target_width, target_ele, point_width="", print_point_flag=false, point_number=""){
     var original_point_x = original_point_info['x'];     // 실제 x좌표
     var original_point_y = original_point_info['y'];     // 실제 y좌표
