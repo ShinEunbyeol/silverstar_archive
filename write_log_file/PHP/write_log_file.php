@@ -34,7 +34,11 @@
             // 로그 파일 내용 작성
             $current_time = date("Y-m-d H:i:s", time());
             
-            fwrite($log_file_open, "\n> {$current_time} > {$who_call}");
+            fwrite($log_file_open, "\n> {$current_time}>{$who_call}: {$debug_message}");
+            fclose($log_file_open);
         }
+
+        // 파일 관련 정보를 지움(다음에 실행할 때 파일 사이즈를 정확히 읽어오기 위함)
+        clearstatcache();
     }
 ?>
