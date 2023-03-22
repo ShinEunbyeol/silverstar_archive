@@ -7,7 +7,6 @@
     <title>메인 페이지</title>
 </head>
 <body>
-    메인 <br>
     {{$v2}}
 </body>
 </html>
