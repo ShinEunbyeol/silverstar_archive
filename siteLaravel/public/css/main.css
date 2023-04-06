@@ -1,17 +1,17 @@
 .blue1 {
-  color: #3793F0;
+  color: #19b6cf;
 }
 
 .blue2 {
-  color: #67ABF0;
+  color: #6DDCED;
 }
 
 .blue3 {
-  color: #90C0F0;
+  color: #A8EAF4;
 }
 
 .blue4 {
-  color: #BDD7F0;
+  color: #ECFAFD;
 }
 
 .red1 {
@@ -47,19 +47,19 @@
 }
 
 .black1 {
-  color: #303030;
+  color: #0E1016;
 }
 
 .black2 {
-  color: #ABABAB;
+  color: #3D4049;
 }
 
 .black3 {
-  color: #C0C0C0;
+  color: #787E8E;
 }
 
 .black4 {
-  color: #D7D7D7;
+  color: #D0D2D8;
 }
 
 .white {
@@ -92,7 +92,7 @@ body {
   padding: 0;
   font-family: "TheJamsil5Bold", "serif";
   font-size: 13px;
-  background-color: #303030;
+  background-color: #0E1016;
 }
 
 #header {
