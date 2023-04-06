@@ -11,9 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-// .js('resources/js/reactTest.jsx', 'public/js')
 // .postCss('resources/css/main.scss', 'public/css', [])
 
-mix.sass('resources/css/main.scss', 'public/css', [])
+mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/main.js', 'public/js')
+    .sass('resources/css/main.scss', 'public/css', [])
     .sass('resources/css/header.scss', 'public/css', [])
-    .sass('resources/css/footer.scss', 'public/css', []);
+    .sass('resources/css/footer.scss', 'public/css', [])
+    .sass('resources/css/sideMenu.scss', 'public/css', []);
