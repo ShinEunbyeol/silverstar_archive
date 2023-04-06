@@ -1,0 +1,6 @@
+#side_menu .eachMenu {
+  display: none;
+}
+#side_menu .activeMenu {
+  display: block;
+}
