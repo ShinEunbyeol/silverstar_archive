@@ -1,0 +1,72 @@
+// Color
+$color_blue_1: #3793F0; $color_blue_2: #67ABF0; $color_blue_3: #90C0F0; $color_blue_4: #BDD7F0;
+$color_red_1: #F0594F; $color_red_2: #F06E67; $color_red_3: #F09590; $color_red_4: #F0C0BD;
+$color_yellow_1: #EEF768; $color_yellow_2: #EBF19E; $color_yellow_3: #EEF1C4; $color_yellow_4: #F4F6E1;
+$color_black_1: #303030; $color_black_2: #ABABAB; $color_black_3: #C0C0C0; $color_black_4: #D7D7D7;
+$color_white: #F7F7F7;
+.blue1 {color: $color_blue_1;} .blue2 {color: $color_blue_2;} .blue3 {color: $color_blue_3;} .blue4 {color: $color_blue_4;}
+.red1 {color: $color_red_1;} .red2 {color: $color_red_2;} .red3 {color: $color_red_3;} .red4 {color: $color_red_4;}
+.yellow1 {color: $color_yellow_1;} .yellow2 {color: $color_yellow_2;} .yellow3 {color: $color_yellow_3;} .yellow4 {color: $color_yellow_4;}
+.black1 {color: $color_black_1;} .black2 {color: $color_black_2;} .black3 {color: $color_black_3;} .black4 {color: $color_black_4;}
+.white {color: $color_white;}
+
+// Font Size
+$font_normal: 13px;
+$font_smallBig: 16px;
+$font_big: 20px;
+$font_menu: $font_big;
+$font_footer: $font_big;
+.fontNormal {font-size: $font_normal;} 
+.fontSmallBig {font-size: $font_smallBig;} .fontBig {font-size: $font_big;}
+
+// Area Size
+$side_padding: 15px;
+$header_height: 80px;
+$footer_height: 100px;
+$side_menu_width: 240px;
+
+// Margin/Padding
+.ml10 {margin-left: 10px;}
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-style: normal;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'TheJamsil5Bold', 'serif';
+    font-size: $font_normal;
+    background-color: $color_black_1;
+}
+#header {
+    width: 100%;
+    height: $header_height;
+    color: $color_white;
+    font-size: $font_menu;
+}
+#footer {
+    width: 100%;
+    height: $footer_height;
+    color: $color_white;
+    font-size: $font_footer;
+    text-align: center;
+}
+#side_menu {
+    position: fixed;
+    top: $header_height;
+    left: $side_padding;
+    width: $side_menu_width;
+    height: calc(100% - ($footer_height*2));
+}
+#content {
+    position: relative;
+    top: 0;
+    left: $side_menu_width;
+}
+
+.sideBySide {
+    display: inline-block;
+}

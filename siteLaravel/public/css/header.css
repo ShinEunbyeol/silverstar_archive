@@ -127,3 +127,13 @@ body {
 .sideBySide {
   display: inline-block;
 }
+
+.eachMenu {
+  display: inline-block;
+  line-height: 80px;
+  text-align: center;
+}
+
+.activeMenu {
+  color: #3793F0;
+}

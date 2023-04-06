@@ -11,5 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/reactTest.jsx', 'public/js')
-    .postCss('resources/css/main.css', 'public/css', []);
+// .js('resources/js/reactTest.jsx', 'public/js')
+// .postCss('resources/css/main.scss', 'public/css', [])
+
+mix.sass('resources/css/main.scss', 'public/css', [])
+    .sass('resources/css/header.scss', 'public/css', [])
+    .sass('resources/css/footer.scss', 'public/css', []);

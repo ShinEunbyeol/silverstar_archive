@@ -1,0 +1,22 @@
+@import 'main';
+
+.eachMenu {
+    display: inline-block;
+    line-height: $header_height;
+    text-align: center;
+}
+
+.activeMenu {
+    color: $color_blue_1;
+    // text-shadow: 0 0 10px $color_blue_1,
+    //             0 0 20px $color_white;
+
+    // text-shadow: 0 0 5px $color_white,
+    //             0 0 10px $color_white,
+    //             0 0 20px $color_white,
+    //             0 0 40px $color_blue_1,
+    //             0 0 80px $color_blue_1,
+    //             0 0 90px $color_blue_1,
+    //             0 0 100px $color_blue_1,
+    //             0 0 150px $color_blue_1;
+}

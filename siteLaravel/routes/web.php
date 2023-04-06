@@ -18,4 +18,4 @@ use App\Http\Controllers\Main;
 //     return view('welcome');
 // });
 
-Route::get('/', [Main::class, 'index']);
+Route::get('/', [Main::class, 'intro']);
