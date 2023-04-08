@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /**
  * 활성화된 메뉴에 따라서 자동으로 적용해주는 함수
- * @param {string} menuId 활성화된 메인 메뉴 id ([메인메뉴]-[사이드메뉴])
+ * @param {string} menuId 활성화된 메뉴 id ([메인메뉴]-[사이드메뉴])
  */
 function check_activeMenu(menuId) {
     let mainMenuId;     // 메인 메뉴 id
