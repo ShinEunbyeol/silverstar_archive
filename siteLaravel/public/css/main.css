@@ -111,17 +111,21 @@ body {
 }
 
 #side_menu {
+  display: table;
   position: fixed;
   top: 80px;
   left: 15px;
   width: 240px;
   height: calc(100% - 200px);
+  font-size: 16px;
+  text-align: center;
 }
 
 #content {
   position: relative;
   top: 0;
-  left: 240px;
+  left: 270px;
+  color: #F7F7F7;
 }
 
 .sideBySide {

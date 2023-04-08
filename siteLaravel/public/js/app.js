@@ -2061,6 +2061,7 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./common */ "./resources/js/common.js");
 
 /***/ }),
 
@@ -2097,6 +2098,37 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/common.js":
+/*!********************************!*\
+  !*** ./resources/js/common.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "get_firstChild": () => (/* binding */ get_firstChild),
+/* harmony export */   "test": () => (/* binding */ test)
+/* harmony export */ });
+function test() {
+  console.log(test);
+}
+
+/**
+ * firstChild 리턴값을 Text타입에서 Element타입으로 변경하는 함수
+ * @param {Element} element 첫번째 자식 노드를 가져오려는 부모 노드
+ * @returns Element타입의 첫번째 자식 노드
+ */
+function get_firstChild(element) {
+  var firstChild = element.firstChild;
+  while (firstChild != null && firstChild.nodeType == 3) {
+    firstChild = firstChild.nextSibling;
+  }
+  return firstChild;
+}
 
 /***/ }),
 
@@ -19631,6 +19663,18 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

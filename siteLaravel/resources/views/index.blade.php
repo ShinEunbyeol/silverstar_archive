@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ url('css/main.css') }}" />
     @yield('css')
 
-    <script src="{{ url('js/app.js') }}"></script>
+    {{-- <script src="{{ url('js/app.js') }}"></script> --}}
     <script src="{{ url('js/main.js') }}"></script>
     @yield('js')
 </head>

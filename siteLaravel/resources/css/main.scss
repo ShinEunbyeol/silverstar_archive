@@ -15,6 +15,7 @@ $font_normal: 13px;
 $font_smallBig: 16px;
 $font_big: 20px;
 $font_menu: $font_big;
+$font_sizeMenu: $font_smallBig;
 $font_footer: $font_big;
 .fontNormal {font-size: $font_normal;} 
 .fontSmallBig {font-size: $font_smallBig;} .fontBig {font-size: $font_big;}
@@ -24,6 +25,7 @@ $side_padding: 15px;
 $header_height: 80px;
 $footer_height: 100px;
 $side_menu_width: 240px;
+$side_menu_height: calc(100% - ($footer_height*2));
 
 // Margin/Padding
 .ml10 {margin-left: 10px;}
@@ -55,16 +57,20 @@ body {
     text-align: center;
 }
 #side_menu {
+    display: table;
     position: fixed;
     top: $header_height;
     left: $side_padding;
     width: $side_menu_width;
-    height: calc(100% - ($footer_height*2));
+    height: $side_menu_height;
+    font-size: $font_sizeMenu;
+    text-align: center;
 }
 #content {
     position: relative;
     top: 0;
-    left: $side_menu_width;
+    left: $side_menu_width + ($side_padding * 2);
+    color: $color_white;
 }
 
 .sideBySide {
