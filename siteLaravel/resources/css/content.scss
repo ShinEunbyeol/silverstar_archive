@@ -1,0 +1,10 @@
+@import 'main';
+
+#content {
+    padding: 30px;
+}
+#eunbyeolShin {
+    > div {
+        font-size: $font_tooBig;
+    }
+}
