@@ -1,10 +1,10 @@
-@import 'main';
+@use 'library' as lib;
 
 #content {
     padding: 30px;
 }
 #eunbyeolShin {
     > div {
-        font-size: $font_tooBig;
+        font-size: lib.$font_tooBig;
     }
 }

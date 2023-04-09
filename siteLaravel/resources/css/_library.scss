@@ -1,0 +1,23 @@
+// Color
+$color_blue_1: #19b6cf; $color_blue_2: #6DDCED; $color_blue_3: #A8EAF4; $color_blue_4: #ECFAFD;
+$color_red_1: #F0594F; $color_red_2: #F06E67; $color_red_3: #F09590; $color_red_4: #F0C0BD;
+$color_yellow_1: #EEF768; $color_yellow_2: #EBF19E; $color_yellow_3: #EEF1C4; $color_yellow_4: #F4F6E1;
+$color_black_1: #0E1016; $color_black_2: #3D4049; $color_black_3: #787E8E; $color_black_4: #D0D2D8;
+$color_white: #F7F7F7;
+
+// Font Size
+$font_normal: 13px;
+$font_smallBig: 16px;
+$font_big: 20px;
+$font_bigger: 27px;
+$font_tooBig: 35px;
+$font_menu: $font_big;
+$font_sizeMenu: $font_smallBig;
+$font_footer: $font_big;
+
+// Area Size
+$side_padding: 15px;
+$header_height: 80px;
+$footer_height: 100px;
+$side_menu_width: 240px;
+$side_menu_height: calc(100% - ($footer_height*2));

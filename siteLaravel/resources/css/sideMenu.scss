@@ -1,7 +1,7 @@
-@import 'main';
+@use 'library' as lib;
 
 #side_menu {
-    background-color: $color_white;
+    background-color: lib.$color_white;
     .eachSideMenu {
         display: none;
         .eachMenu {
@@ -9,7 +9,7 @@
             height: 50px;
 
             &.activeMenu {
-                color: $color_blue_1;
+                color: lib.$color_blue_1;
             }
         }
     }

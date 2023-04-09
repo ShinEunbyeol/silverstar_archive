@@ -2,9 +2,9 @@
     "/js/app.js": "/js/app.js",
     "/js/main.js": "/js/main.js",
     "/js/content.js": "/js/content.js",
-    "/css/content.css": "/css/content.css",
-    "/css/sideMenu.css": "/css/sideMenu.css",
     "/css/footer.css": "/css/footer.css",
+    "/css/main.css": "/css/main.css",
+    "/css/sideMenu.css": "/css/sideMenu.css",
     "/css/header.css": "/css/header.css",
-    "/css/main.css": "/css/main.css"
+    "/css/content.css": "/css/content.css"
 }

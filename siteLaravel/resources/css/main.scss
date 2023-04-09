@@ -1,33 +1,15 @@
+@use 'library' as lib;
+
 // Color
-$color_blue_1: #19b6cf; $color_blue_2: #6DDCED; $color_blue_3: #A8EAF4; $color_blue_4: #ECFAFD;
-$color_red_1: #F0594F; $color_red_2: #F06E67; $color_red_3: #F09590; $color_red_4: #F0C0BD;
-$color_yellow_1: #EEF768; $color_yellow_2: #EBF19E; $color_yellow_3: #EEF1C4; $color_yellow_4: #F4F6E1;
-$color_black_1: #0E1016; $color_black_2: #3D4049; $color_black_3: #787E8E; $color_black_4: #D0D2D8;
-$color_white: #F7F7F7;
-.blue1 {color: $color_blue_1;} .blue2 {color: $color_blue_2;} .blue3 {color: $color_blue_3;} .blue4 {color: $color_blue_4;}
-.red1 {color: $color_red_1;} .red2 {color: $color_red_2;} .red3 {color: $color_red_3;} .red4 {color: $color_red_4;}
-.yellow1 {color: $color_yellow_1;} .yellow2 {color: $color_yellow_2;} .yellow3 {color: $color_yellow_3;} .yellow4 {color: $color_yellow_4;}
-.black1 {color: $color_black_1;} .black2 {color: $color_black_2;} .black3 {color: $color_black_3;} .black4 {color: $color_black_4;}
-.white {color: $color_white;}
+.blue1 {color: lib.$color_blue_1;} .blue2 {color: lib.$color_blue_2;} .blue3 {color: lib.$color_blue_3;} .blue4 {color: lib.$color_blue_4;}
+.red1 {color: lib.$color_red_1;} .red2 {color: lib.$color_red_2;} .red3 {color: lib.$color_red_3;} .red4 {color: lib.$color_red_4;}
+.yellow1 {color: lib.$color_yellow_1;} .yellow2 {color: lib.$color_yellow_2;} .yellow3 {color: lib.$color_yellow_3;} .yellow4 {color: lib.$color_yellow_4;}
+.black1 {color: lib.$color_black_1;} .black2 {color: lib.$color_black_2;} .black3 {color: lib.$color_black_3;} .black4 {color: lib.$color_black_4;}
+.white {color: lib.$color_white;}
 
 // Font Size
-$font_normal: 13px;
-$font_smallBig: 16px;
-$font_big: 20px;
-$font_bigger: 27px;
-$font_tooBig: 35px;
-$font_menu: $font_big;
-$font_sizeMenu: $font_smallBig;
-$font_footer: $font_big;
-.fontNormal {font-size: $font_normal;} 
-.fontSmallBig {font-size: $font_smallBig;} .fontBig {font-size: $font_big;}
-
-// Area Size
-$side_padding: 15px;
-$header_height: 80px;
-$footer_height: 100px;
-$side_menu_width: 240px;
-$side_menu_height: calc(100% - ($footer_height*2));
+.fontNormal {font-size: lib.$font_normal;} 
+.fontSmallBig {font-size: lib.$font_smallBig;} .fontBig {font-size: lib.$font_big;}
 
 // Margin/Padding
 .mt200 {margin-top: 200px;}
@@ -46,38 +28,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'TheJamsil5Bold', 'serif';
-    font-size: $font_normal;
-    background-color: $color_black_1;
+    font-size: lib.$font_normal;
+    background-color: lib.$color_black_1;
 }
 #header {
     width: 100%;
-    height: $header_height;
-    color: $color_white;
-    font-size: $font_menu;
+    height: lib.$header_height;
+    color: lib.$color_white;
+    font-size: lib.$font_menu;
 }
 #footer {
     width: 100%;
-    height: $footer_height;
-    color: $color_white;
-    font-size: $font_footer;
+    height: lib.$footer_height;
+    color: lib.$color_white;
+    font-size: lib.$font_footer;
     text-align: center;
 }
 #side_menu {
     display: table;
     position: fixed;
-    top: $header_height;
-    left: $side_padding;
-    width: $side_menu_width;
-    height: $side_menu_height;
-    font-size: $font_sizeMenu;
+    top: lib.$header_height;
+    left: lib.$side_padding;
+    width: lib.$side_menu_width;
+    height: lib.$side_menu_height;
+    font-size: lib.$font_sizeMenu;
     text-align: center;
 }
 #content {
     position: relative;
     top: 0;
-    left: $side_menu_width + ($side_padding * 2);
+    left: lib.$side_menu_width + (lib.$side_padding * 2);
     height: 100%;
-    color: $color_white;
+    color: lib.$color_white;
 }
 
 .sideBySide {

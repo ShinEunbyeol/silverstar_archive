@@ -1,23 +1,23 @@
-@import 'main';
+@use 'library' as lib;
 
 #header {
     .eachMenu {
         display: inline-block;
-        line-height: $header_height;
+        line-height: lib.$header_height;
         text-align: center;
     }    
     .activeMenu {
-        color: $color_blue_1;
-        // text-shadow: 0 0 10px $color_blue_1,
-        //             0 0 20px $color_white;
+        color: lib.$color_blue_1;
+        // text-shadow: 0 0 10px lib.$color_blue_1,
+        //             0 0 20px lib.$color_white;
     
-        // text-shadow: 0 0 5px $color_white,
-        //             0 0 10px $color_white,
-        //             0 0 20px $color_white,
-        //             0 0 40px $color_blue_1,
-        //             0 0 80px $color_blue_1,
-        //             0 0 90px $color_blue_1,
-        //             0 0 100px $color_blue_1,
-        //             0 0 150px $color_blue_1;
+        // text-shadow: 0 0 5px lib.$color_white,
+        //             0 0 10px lib.$color_white,
+        //             0 0 20px lib.$color_white,
+        //             0 0 40px lib.$color_blue_1,
+        //             0 0 80px lib.$color_blue_1,
+        //             0 0 90px lib.$color_blue_1,
+        //             0 0 100px lib.$color_blue_1,
+        //             0 0 150px lib.$color_blue_1;
     }
 }
