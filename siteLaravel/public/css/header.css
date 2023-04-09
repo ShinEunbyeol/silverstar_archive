@@ -1,8 +1,1 @@
-#header .eachMenu {
-  display: inline-block;
-  line-height: 80px;
-  text-align: center;
-}
-#header .activeMenu {
-  color: #19b6cf;
-}
+#header .eachMenu{display:inline-block;line-height:80px;text-align:center}#header .activeMenu{color:#19b6cf}
