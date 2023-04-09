@@ -38,6 +38,7 @@ body {
     font-size: lib.$font_menu;
 }
 #footer {
+    display: table;
     width: 100%;
     height: lib.$footer_height;
     color: lib.$color_white;
@@ -58,7 +59,7 @@ body {
     position: relative;
     top: 0;
     left: lib.$side_menu_width + (lib.$side_padding * 2);
-    height: 100%;
+    min-height: 100%;
     color: lib.$color_white;
 }
 

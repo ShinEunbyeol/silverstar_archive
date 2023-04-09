@@ -18,6 +18,6 @@ $font_footer: $font_big;
 // Area Size
 $side_padding: 15px;
 $header_height: 80px;
-$footer_height: 100px;
+$footer_height: 150px;
 $side_menu_width: 240px;
-$side_menu_height: calc(100% - ($footer_height*2));
+$side_menu_height: calc(100% - ($header_height + $footer_height));
