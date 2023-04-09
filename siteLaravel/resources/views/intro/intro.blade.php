@@ -3,6 +3,7 @@
 @section('pageTitle', 'Eunbyeol Shin')
 
 @section('css')
+    <link rel="stylesheet" href="{{ url('css/library/typing.css') }}">
     <link rel="stylesheet" href="{{ url('css/content.css'); }}">
 @endsection
 
@@ -15,7 +16,10 @@
         <div class="greeting">
             안녕하세요!<br>
             <br>
-            <span id='favorite_thing' class='blue1'>문제 해결</span>을 좋아하는<br>
+            <span class="typingContainer">
+                <span id='favorite_thing' class='typingText blue1'></span>
+                <span class="typingCursor"></span>을 좋아하는<br>
+            </span>
             개발자 <span class='blue1'>신은별</span>입니다。
         </div>
         <div class="introduce mt200">

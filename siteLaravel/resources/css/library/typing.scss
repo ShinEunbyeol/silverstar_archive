@@ -1,0 +1,24 @@
+$color_typingCursor: #fff;
+
+.typingContainer {
+    display: flex;
+}
+.typingCursor {
+    display: inline-block;
+    width: 3px;
+    animation: typingBlink 0.8s infinite;
+    background-color: $color_typingCursor;
+    margin: 0 0.1rem;
+
+    &.typing {
+        animation: none;
+    }
+}
+
+@keyframes typingBlink {
+    0% { background-color: $color_typingCursor; }
+    49% { background-color: $color_typingCursor; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: $color_typingCursor; }
+}
