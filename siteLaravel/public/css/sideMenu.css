@@ -78,6 +78,10 @@
   font-size: 20px;
 }
 
+.mt200 {
+  margin-top: 200px;
+}
+
 .ml10 {
   margin-left: 10px;
 }
@@ -87,6 +91,10 @@
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
   font-style: normal;
 }
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -125,6 +133,7 @@ body {
   position: relative;
   top: 0;
   left: 270px;
+  height: 100%;
   color: #F7F7F7;
 }
 
