@@ -13,13 +13,13 @@ const mix = require('laravel-mix');
 
 // .postCss('resources/css/main.scss', 'public/css', [])
 
-mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/main.js', 'public/js')
-    .js('resources/js/content.js', 'public/js')
-        .js('resources/js/library/typing.js', 'public/js/library')
-    .sass('resources/css/main.scss', 'public/css', [])
-    .sass('resources/css/header.scss', 'public/css', [])
-    .sass('resources/css/footer.scss', 'public/css', [])
-    .sass('resources/css/sideMenu.scss', 'public/css', [])
-    .sass('resources/css/content.scss', 'public/css', [])
-        .sass('resources/css/library/typing.scss', 'public/css/library', []);
+mix.js('resources/js/app.js', 'js')
+    .js('resources/js/main.js', 'js')
+    .js('resources/js/content.js', 'js')
+    .sass('resources/css/main.scss', 'css', [])
+    .sass('resources/css/header.scss', 'css', [])
+    .sass('resources/css/footer.scss', 'css', [])
+    .sass('resources/css/sideMenu.scss', 'css', [])
+    .sass('resources/css/content.scss', 'css', [])
+        .js('resources/js/library/typing.js', 'js/library/')
+        .sass('resources/css/library/typing.scss', 'css/library/', []);
