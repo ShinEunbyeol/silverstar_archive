@@ -1,7 +1,13 @@
 @use 'library' as lib;
 
 #content {
-    padding: 30px;
+    .contentContainer {
+        min-width: lib.$min_width;
+        width: 100%;
+    }
+    .contentContainer:not(:first-of-type) {
+        margin-top: 200px;
+    }
     
     #eunbyeolShin {
         > div {
@@ -16,6 +22,25 @@
             
             display: inline-block;
             margin-right: 10px;
+        }
+    }
+    #career {
+        font-size: lib.$font_big;
+    }
+    #contact {
+        font-size: lib.$font_smallBig;
+        
+        .row {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .contactType {
+            text-align: center;
+        }
+        .contactImg {
+            display: block;
+            width: 60%;
+            margin: 0 auto 10px;
         }
     }
 }

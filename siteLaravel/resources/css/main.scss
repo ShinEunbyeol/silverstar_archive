@@ -9,11 +9,10 @@
 
 // Font Size
 .fontNormal {font-size: lib.$font_normal;} 
-.fontSmallBig {font-size: lib.$font_smallBig;} .fontBig {font-size: lib.$font_big;}
+.fontSmallBig {font-size: lib.$font_smallBig;} .fontBig {font-size: lib.$font_big;} .fontBigger {font-size: lib.$font_bigger} .fontTooBig {font-size: lib.$font_tooBig}
 
 // Margin/Padding
-.mt125 {margin-top: 125px;}
-.mt200 {margin-top: 200px;}
+.mt30 {margin-top: 30px;} .mt50 {margin-top: 50px;} .mt125 {margin-top: 125px;} .mt200 {margin-top: 200px;}
 .ml10 {margin-left: 10px;}
 
 @font-face {
@@ -21,9 +20,18 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
     font-style: normal;    
 }
+@keyframes move-background {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 1000px;
+    }
+}
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -31,7 +39,12 @@ body {
     font-family: 'TheJamsil5Bold', 'serif';
     font-size: lib.$font_normal;
     background-color: lib.$color_black_1;
+} 
+a, a:hover, a:visited {
+    color: inherit;             // 색상 제거
+    text-decoration-line: none; // 밑줄 제거
 }
+
 #header {
     width: 100%;
     height: lib.$header_height;
@@ -60,10 +73,29 @@ body {
     position: relative;
     top: 0;
     left: lib.$side_menu_width + (lib.$side_padding * 2);
+    width: lib.$content_width;
     min-height: 100%;
+    box-sizing: border-box;
+    padding: lib.$content_padding lib.$content_padding 60px;
     color: lib.$color_white;
+    overflow: auto;
 }
 
+.widthPer100 {
+    width: 100%;
+}
 .sideBySide {
     display: inline-block;
+}
+.textCenter {
+    text-align: center;
+}
+.line {
+    padding: 10px 0;
+}
+
+@media (min-width: lib.$min_width) {
+    #content {
+        overflow-x: hidden;
+    }
 }

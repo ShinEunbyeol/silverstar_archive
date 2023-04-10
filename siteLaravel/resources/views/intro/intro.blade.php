@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-    <div id="eunbyeolShin">
+    <div id="eunbyeolShin" class="contentContainer">
         <div class="greeting">
             안녕하세요!<br>
             <br>
@@ -22,7 +22,7 @@
             </span>
             개발자 <span class="blue1">신은별</span>입니다。
         </div>
-        <div class="introduce mt125">
+        <div class="introduce widthPer100 mt125">
             [예시]<br>
             완벽한 것은 존재하지 않다고 생각하기에 개선 요소를 찾으려고 노력하는 풀스택 4년차 개발자 신은별 입니다.<br>
             <br>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div id="skill" class="mt200">
+    <div id="skill" class="contentContainer">
         <div id="php" class="skillBlock">
             <div class="star">⟡</div>PHP
         </div>
@@ -70,6 +70,83 @@
         </div>
         <div id="jquery" class="skillBlock">
             <div class="star">⟡</div>jQuery
+        </div>
+    </div>
+
+    <div id="career" class="contentContainer">
+        <div id="career_graph" class="widthPer100 textCenter">
+            === 그래프 위치 ===
+        </div>
+        <div class="fontTooBig mt50">
+            Graduation
+        </div>
+        <div class="line row">
+            <div class="col-2">
+                2018
+            </div>
+            <div class="col-10">
+                동양미래대학교 컴퓨터정보공학과 졸업
+            </div>
+        </div>
+        <div class="line row">
+            <div class="col-2">
+                2016
+            </div>
+            <div class="col-10">
+                동양미래대학교 컴퓨터정보공학과 입학
+            </div>
+        </div>
+        <div class="line row">
+            <div class="col-2">
+                2016
+            </div>
+            <div class="col-10">
+                정왕고등학교 졸업
+            </div>
+        </div>
+        <div class="fontTooBig mt50">
+            Work
+        </div>
+        <div class="line row">
+            <div class="col-4">
+                2022.01 - 2023.01
+            </div> 
+            <div class="col-8">
+                렛츠밀란커머스 / 개발팀 매니저
+            </div>
+        </div>
+        <div class="line row">
+            <div class="col-4">
+                2018.11 - 2021.06
+            </div>
+            <div class="col-8">
+                토리랩 / 개발팀 연구원
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contentContainer">
+        <div class="row">
+            <div class="col-4 contactType">
+                <img class="contactImg" src="{{ url('image/tistory.png'); }}" alt="티스토리">
+                블로그
+            </div>
+            <div class="col-4 contactType">
+                <img class="contactImg" src="{{ url('image/github.png'); }}" alt="깃허브">
+                GitHub
+            </div>
+            <div class="col-4 contactType">
+                <img class="contactImg" src="{{ url('image/gmail.png'); }}" alt="지메일">
+                Gmail
+            </div>
+        </div>
+        <div class="contactDownload widthPer100 textCenter">
+            <div class="mt50">
+                <a href="">이력서 다운로드</a>
+            </div>
+            <div class="mt30">
+                <a href="">경력기술서 다운로드</a>
+            </div>
         </div>
     </div>
 @endsection 
