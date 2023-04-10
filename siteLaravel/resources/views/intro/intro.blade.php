@@ -17,12 +17,12 @@
             안녕하세요!<br>
             <br>
             <span class="typingContainer">
-                <span id='favorite_thing' class='typingText blue1'></span>
+                <span id="favorite_thing" class="typingText blue1"></span>
                 <span class="typingCursor"></span>을 좋아하는<br>
             </span>
-            개발자 <span class='blue1'>신은별</span>입니다。
+            개발자 <span class="blue1">신은별</span>입니다。
         </div>
-        <div class="introduce mt200">
+        <div class="introduce mt125">
             [예시]<br>
             완벽한 것은 존재하지 않다고 생각하기에 개선 요소를 찾으려고 노력하는 풀스택 4년차 개발자 신은별 입니다.<br>
             <br>
@@ -32,4 +32,52 @@
             데이터를 기반으로 사용자가 원하는 정보를 전달해줄 수 있는 로직을 만드는 개발자가 되는 것이 목표입니다.
         </div>
     </div>
+
+    <div id="skill" class="mt200">
+        <div id="php" class="skillBlock">
+            <div class="star">⟡</div>PHP
+        </div>
+        <div id="laravel" class="skillBlock">
+            <div class="star">⟡</div>Laravel
+        </div>
+        <div id="codeigniter" class="skillBlock">
+            <div class="star">⟡</div>CodeIgniter
+        </div>
+        <br>
+        <div id="linux" class="skillBlock">
+            <div class="star">⟡</div>Linux
+        </div>
+        <div id="aws" class="skillBlock">
+            <div class="star">⟡</div>AWS
+        </div>
+        <br>
+        <div id="mysql" class="skillBlock">
+            <div class="star">⟡</div>MySQL
+        </div>
+        <br>
+        <div id="git" class="skillBlock">
+            <div class="star">⟡</div>Git
+        </div>
+        <br>
+        <div id="html_css" class="skillBlock">
+            <div class="star">⟡</div>HTML/CSS
+        </div>
+        <div id="scss" class="skillBlock">
+            <div class="star">⟡</div>scss
+        </div>
+        <div id="javascript" class="skillBlock">
+            <div class="star">⟡</div>JavaScript
+        </div>
+        <div id="jquery" class="skillBlock">
+            <div class="star">⟡</div>jQuery
+        </div>
+    </div>
 @endsection 
+
+
+
+
+
+
+
+

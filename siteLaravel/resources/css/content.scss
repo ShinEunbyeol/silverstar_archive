@@ -2,9 +2,25 @@
 
 #content {
     padding: 30px;
-}
-#eunbyeolShin {
-    > div {
-        font-size: lib.$font_tooBig;
+    
+    #eunbyeolShin {
+        > div {
+            font-size: lib.$font_tooBig;
+        }
     }
+    #skill {
+        .skillBlock {
+            width: max-content;
+            font-size: lib.$font_big;
+            text-align: center;
+            
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}
+
+.star {
+    font-size: lib.$font_tooBig;
+    color: lib.$color_yellow_1;
 }
