@@ -127,25 +127,25 @@
 
     <div id="contact" class="contentContainer">
         <div class="row">
-            <div class="col-4 contactType">
+            <a class="col-4 contactType" href="https://estrella13.tistory.com/" target="_blank">
                 <img class="contactImg" src="{{ url('image/tistory.png'); }}" alt="티스토리">
                 블로그
-            </div>
-            <div class="col-4 contactType">
+            </a>
+            <a class="col-4 contactType" href="https://github.com/ShinEunbyeol" target="_blank">
                 <img class="contactImg" src="{{ url('image/github.png'); }}" alt="깃허브">
                 GitHub
-            </div>
-            <div class="col-4 contactType">
+            </a>
+            <a class="col-4 contactType" href="mailto:silverbyeol97@gmail.com" target="_blank">
                 <img class="contactImg" src="{{ url('image/gmail.png'); }}" alt="지메일">
                 Gmail
-            </div>
+            </a>
         </div>
         <div class="contactDownload widthPer100 textCenter">
             <div class="mt50">
-                <a href="">이력서 다운로드</a>
+                <a href="{{ url('file/resume_eunbyeolShin.pdf'); }}" target="_blank">이력서 파일</a>
             </div>
             <div class="mt30">
-                <a href="">경력기술서 다운로드</a>
+                <a href="{{ url('file/careerDescription_eunbyeolShin.pdf'); }}" target="_blank">경력기술서 파일</a>
             </div>
         </div>
     </div>

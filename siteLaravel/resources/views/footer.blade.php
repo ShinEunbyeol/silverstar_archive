@@ -8,6 +8,6 @@
         </div>
     </div>
     <div class="emailInfo fontSmallBig">
-        silverbyeol97@gmail.com
+        <a href="mailto:silverbyeol97@gmail.com" target="_blank">silverbyeol97@gmail.com</a>
     </div>
 </div>
