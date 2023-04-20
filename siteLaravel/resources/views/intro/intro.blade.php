@@ -149,6 +149,10 @@
             </div>
         </div>
     </div>
+    
+    <div id="astronaut">
+        <img src="{{ url('image/astronaut.png') }}">
+    </div>
 @endsection 
 
 
