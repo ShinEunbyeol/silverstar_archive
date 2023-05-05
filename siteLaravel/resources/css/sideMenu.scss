@@ -1,7 +1,8 @@
 @use 'library' as lib;
 
 #side_menu {
-    background-color: lib.$color_white;
+    background: url("/silverstar_archive/siteLaravel/public/image/sideMenu_background.png") no-repeat center;
+
     .eachSideMenu {
         display: none;
         .eachMenu {

@@ -1,9 +1,13 @@
 @use 'library' as lib;
 
 #content {
+    overflow-x: auto;
+
     .contentContainer {
         min-width: lib.$min_width;
         width: 100%;
+        min-height: 100vh;
+        padding-top: 50px;
     }
     .contentContainer:not(:first-of-type) {
         margin-top: 200px;
@@ -15,13 +19,78 @@
         }
     }
     #skill {
+        width: 100%;
+        height: 620px;
+
         .skillBlock {
+            position: absolute;
             width: max-content;
             font-size: lib.$font_big;
             text-align: center;
+
+            &#php {
+                top: 66px;
+                left: 88px;
+            }
+            &#laravel {
+                top: 150px;
+                left: 162px;
+            }
+            &#codeigniter {
+                top: 284px;
+                left: 0px;
+            }
+            &#linux {
+                top: 151px;
+                left: 405px;
+            }
+            &#aws {
+                top: 243px;
+                left: 308px;
+            }
+            &#mysql {
+                top: 324px;
+                left: 553px;
+            }
+            &#git {
+                top: 132px;
+                left: 759px;
+            }
+            &#html_css {
+                top: 535px;
+                left: 329px;
+            }
+            &#scss {
+                top: 656px;
+                left: 123px;
+            }
+            &#javascript {
+                top: 631px;
+                left: 428px;
+            }
+            &#jquery {
+                top: 477px;
+                left: 736px;
+            }
             
-            display: inline-block;
-            margin-right: 10px;
+            .star_1, .star_2, .star_3 {
+                margin-bottom: 10px;
+            }
+            .star_1 {
+                > i {
+                    animation: starBlink_1 3s infinite;
+                }
+            }
+            .star_2 {
+                > i {
+                    animation: starBlink_2 2.4s infinite;
+                }
+            }
+            .star_3 {
+                > i {
+                    animation: starBlink_3 3.8s infinite;
+                }
+            }
         }
     }
     #career {
@@ -45,7 +114,7 @@
     }
     #astronaut {
         position: absolute;
-        top: 20px;
+        top: 70px;
         left: 360px;
         width: 320px;
 
@@ -55,7 +124,18 @@
     }
 }
 
-.star {
-    font-size: lib.$font_tooBig;
-    color: lib.$color_yellow_1;
+@keyframes starBlink_1 {
+    0% { color: lib.$color_yellow_1; }
+    50% { color: transparent; }
+    100% { color: lib.$color_yellow_1; }
+}
+@keyframes starBlink_2 {
+    0% { color: lib.$color_yellow_1; }
+    30% { color: transparent; }
+    100% { color: lib.$color_yellow_1; }
+}
+@keyframes starBlink_3 {
+    0% { color: lib.$color_yellow_1; }
+    80% { color: transparent; }
+    100% { color: lib.$color_yellow_1; }
 }
