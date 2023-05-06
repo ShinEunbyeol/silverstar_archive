@@ -81,6 +81,9 @@ a, a:hover, a:visited {
     overflow: auto;
 }
 
+.relative {
+    position: relative;
+}
 .widthPer100 {
     width: 100%;
 }
@@ -94,8 +97,16 @@ a, a:hover, a:visited {
     padding: 10px 0;
 }
 
+.verticalCenterParent {
+    display: table;
+}
+.verticalCenterChildren {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 @media (min-width: lib.$min_width) {
-    #content {
-        overflow-x: hidden;
-    }
+    // #content {
+    //     overflow-x: hidden;
+    // }
 }
