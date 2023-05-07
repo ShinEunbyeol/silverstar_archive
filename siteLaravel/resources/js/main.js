@@ -1,12 +1,18 @@
 import * as common from './common.js';
 
-const activeMenuClass = 'activeMenu';  // 활성화된 메인 메뉴
+const activeMenuClass = 'activeMenu';  // 활성화된 메인 메뉴 클래스
 // const max_browserHeight = screen.availHeight - (window.outerHeight - window.innerHeight);   // 브라우저의 최대 높이
 
+const arr_url = location.href.split('/');   // URL
+const cnt_arr_url = arr_url.length;
+
 document.addEventListener("DOMContentLoaded", function() {
+    // 활성화된 메뉴 적용하기
+    check_activeMenu(arr_url[cnt_arr_url-1]);
+
     // 스크롤 인식
     const tag_body = document.querySelector('body');
-    tag_body.addEventListener('scroll', function() {
+    tag_body.addEventListener('mousewheel', function() {    // scroll
         let scrollY = this.scrollTop;
 
         // 해당 구역에 맞는 메뉴 활성화
@@ -26,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const tag_menu = document.querySelectorAll('.eachMenu');
     tag_menu.forEach((target) => target.addEventListener('click', function() {
         let id_currentMenu = target.getAttribute('id');
-        if(id_currentMenu == 'api' || id_currentMenu == 'html_css' || id_currentMenu == 'toy_project') {
+        if(id_currentMenu == 'api' || id_currentMenu == 'htmlcss') {
             swal({
                 'text': '준비 중입니다 :)',
                 'icon': 'warning'
@@ -38,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         check_activeMenu(id_currentMenu);
 
         // 클릭한 구역으로 이동하기
-        move_menuScroll(menuId);
+        move_menu(id_currentMenu);
     }));
 });
 
@@ -80,13 +86,19 @@ function check_activeMenu(menuId) {
  * 메뉴 클릭 시 구역 이동하는 함수
  * @param {string} menuId 활성화된 메뉴 id ([메인메뉴]-[사이드메뉴])
  */
-function move_menuScroll(menuId) {
-    // 클릭한 메뉴 아이디에서 이동할 구역의 아이디 가져오기
-    let areaId = menuId.split('-')[1];
-
-    // 해당 구역으로 이동
-    let tag_area =  document.querySelector('#'+areaId);
-    tag_area.scrollIntoView({
-        'behavior': 'smooth'
-    })
+function move_menu(menuId) {
+    if(menuId.indexOf('-') != -1) {
+        // 영역 스크롤
+        // 클릭한 메뉴 아이디에서 이동할 구역의 아이디 가져오기
+        let areaId = menuId.split('-')[1];
+    
+        // 해당 구역으로 이동
+        let tag_area =  document.querySelector('#'+areaId);
+        tag_area.scrollIntoView({
+            'behavior': 'smooth'
+        });
+    }else {
+        // 페이지 이동
+        location.href = "/"+menuId;
+    }
 }

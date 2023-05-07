@@ -15,18 +15,16 @@
     <div id="api-contact" class="eachMenu">Contact</div>
 </div>
 
-<div id="html_css-side" class="eachSideMenu">
-    <div id="html_css-mee" class="eachMenu">HTML/CSS 사이드</div>
-    <div id="html_css-eunbyeolShin" class="activeMenu eachMenu">Eunbyeol Shin</div>
-    <div id="html_css-skill" class="eachMenu">Skill</div>
-    <div id="html_css-career" class="eachMenu">Career</div>
-    <div id="html_css-contact" class="eachMenu">Contact</div>
+<div id="htmlcss-side" class="eachSideMenu">
+    <div id="htmlcss-mee" class="eachMenu">HTML/CSS 사이드</div>
+    <div id="htmlcss-eunbyeolShin" class="activeMenu eachMenu">Eunbyeol Shin</div>
+    <div id="htmlcss-skill" class="eachMenu">Skill</div>
+    <div id="htmlcss-career" class="eachMenu">Career</div>
+    <div id="htmlcss-contact" class="eachMenu">Contact</div>
 </div>
 
-<div id="toy_project-side" class="eachSideMenu">
-    <div id="toy_project-meee" class="eachMenu">Toy Project</div>
-    <div id="toy_project-eunbyeolShin" class="activeMenu eachMenu">Eunbyeol Shin</div>
-    <div id="toy_project-skill" class="eachMenu">Skill</div>
-    <div id="toy_project-career" class="eachMenu">Career</div>
-    <div id="toy_project-contact" class="eachMenu">Contact</div>
+<div id="mycode-side" class="eachSideMenu">
+    <div id="mycode-calendar" class="eachMenu">캘린더</div>
+    <div id="mycode-targetSystem" class="eachMenu">과녁 시스템</div>
+    <div id="mycode-permission" class="eachMenu">권한 관리</div>
 </div>

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Main;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\MycodeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,8 @@ use App\Http\Controllers\Main;
 //     return view('welcome');
 // });
 
-Route::get('/', [Main::class, 'intro']);
+Route::get('/', function() {
+    return redirect('/intro');
+});
+Route::get('/intro', [MainController::class, 'intro']);
+Route::get('/mycode', [MycodeController::class, 'list']);
