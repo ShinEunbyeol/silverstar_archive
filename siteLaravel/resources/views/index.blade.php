@@ -29,6 +29,8 @@
     @yield('js')
 </head>
 <body>
+    <div id="construction">공 사 중</div>
+
     <div id="header">
         @include('header')
     </div>
