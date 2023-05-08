@@ -24,7 +24,8 @@
 </div>
 
 <div id="mycode-side" class="eachSideMenu">
-    <div id="mycode-calendar" class="eachMenu">캘린더</div>
-    <div id="mycode-targetSystem" class="eachMenu">과녁 시스템</div>
-    <div id="mycode-permission" class="eachMenu">권한 관리</div>
+    <div id="mycode-intro" class="eachMenu" data-page="blank">소개</div>
+    <div id="mycode-schedule" class="eachMenu" data-page="blank">일정 관리</div>
+    <div id="mycode-permission" class="eachMenu" data-page="blank">권한 관리</div>
+    <div id="mycode-target" class="eachMenu" data-page="blank">과녁 시스템</div>
 </div>

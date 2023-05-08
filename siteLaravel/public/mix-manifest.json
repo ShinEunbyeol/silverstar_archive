@@ -2,11 +2,13 @@
     "/js/app.js": "/js/app.js",
     "/js/main.js": "/js/main.js",
     "/js/content.js": "/js/content.js",
+    "/js/schedule.js": "/js/schedule.js",
     "/js/library/typing.js": "/js/library/typing.js",
     "/css/content.css": "/css/content.css",
     "/css/sideMenu.css": "/css/sideMenu.css",
     "/css/footer.css": "/css/footer.css",
     "/css/header.css": "/css/header.css",
     "/css/main.css": "/css/main.css",
-    "/css/library/typing.css": "/css/library/typing.css"
+    "/css/library/typing.css": "/css/library/typing.css",
+    "/css/schedule.css": "/css/schedule.css"
 }

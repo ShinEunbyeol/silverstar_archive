@@ -23,4 +23,11 @@ Route::get('/', function() {
     return redirect('/intro');
 });
 Route::get('/intro', [MainController::class, 'intro']);
-Route::get('/mycode', [MycodeController::class, 'list']);
+
+Route::get('/mycode', function() {
+    return redirect('/mycode-intro');
+});
+Route::get('/mycode-intro', [MycodeController::class, 'intro']);
+Route::get('/mycode-schedule', [MycodeController::class, 'scheduleManager']);
+Route::get('/mycode-permission', [MycodeController::class, 'permissionManager']);
+Route::get('/mycode-target', [MycodeController::class, 'targetSystem']);

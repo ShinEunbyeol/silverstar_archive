@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 메인/사이드 메뉴 클릭
     const tag_menu = document.querySelectorAll('.eachMenu');
     tag_menu.forEach((target) => target.addEventListener('click', function() {
+        console.log('click');
         let id_currentMenu = target.getAttribute('id');
         if(id_currentMenu == 'api' || id_currentMenu == 'htmlcss') {
             swal({
@@ -87,7 +88,17 @@ function check_activeMenu(menuId) {
  * @param {string} menuId 활성화된 메뉴 id ([메인메뉴]-[사이드메뉴])
  */
 function move_menu(menuId) {
-    if(menuId.indexOf('-') != -1) {
+    // if(menuId.indexOf('-') != -1) { }else { }
+
+    let pageType = document.getElementById(menuId).getAttribute('data-page');
+    if(pageType == 'blank') {
+        // 페이지 이동
+        let url = "/" + menuId;
+        // if(menuId.indexOf('-') != -1) {
+        //     url = "/" + menuId.replace('-', '/');
+        // }
+        location.href = url;
+    }else {
         // 영역 스크롤
         // 클릭한 메뉴 아이디에서 이동할 구역의 아이디 가져오기
         let areaId = menuId.split('-')[1];
@@ -97,8 +108,5 @@ function move_menu(menuId) {
         tag_area.scrollIntoView({
             'behavior': 'smooth'
         });
-    }else {
-        // 페이지 이동
-        location.href = "/"+menuId;
     }
 }

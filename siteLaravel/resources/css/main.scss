@@ -47,9 +47,9 @@ a, a:hover, a:visited {
 
 #construction {
     width: 100%;
-    height: 50px;
-    line-height: 50px;
-    font-size: lib.$font_smallBig;
+    height: lib.$construction_height;
+    line-height: lib.$construction_height;
+    font-size: lib.$font_big;
     text-align: center;
     background-color: lib.$color_yellow_1;
 }
@@ -70,7 +70,7 @@ a, a:hover, a:visited {
 #side_menu {
     display: table;
     position: fixed;
-    top: lib.$header_height;
+    top: lib.$header_height + lib.$construction_height;
     left: lib.$side_padding;
     width: lib.$side_menu_width;
     height: lib.$side_menu_height;

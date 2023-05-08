@@ -16,10 +16,12 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'js')
     .js('resources/js/main.js', 'js')
     .js('resources/js/content.js', 'js')
+    .js('resources/js/schedule.js', 'js')
     .sass('resources/css/main.scss', 'css', [])
     .sass('resources/css/header.scss', 'css', [])
     .sass('resources/css/footer.scss', 'css', [])
     .sass('resources/css/sideMenu.scss', 'css', [])
     .sass('resources/css/content.scss', 'css', [])
+    .sass('resources/css/schedule.scss', 'css', [])
         .js('resources/js/library/typing.js', 'js/library/')
         .sass('resources/css/library/typing.scss', 'css/library/', []);
